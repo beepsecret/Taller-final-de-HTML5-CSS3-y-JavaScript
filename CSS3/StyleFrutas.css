@@ -1,0 +1,20 @@
+.lista {
+    width: auto;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'calibri';
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+.rojo {
+    background: red;
+}
+
+.verde {
+    background: green;
+}
