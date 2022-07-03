@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>Hoja de vida</title>
+    <link rel="stylesheet" href="CSS3/EstiloCV.css">
+    <script defer src="Javascript/funciones.js"></script>
+</head>
+
+<body id="contenido">
+    <button type="button" onclick="cambiarColorAzul('contenido')">Azul</button>
+    <button type="button" onclick="cambiarColorVerde('contenido')">Verde</button>
+    <button type="button" onclick="cambiarColorMorado('contenido')">Morado</button>
+    <header>
+        <h2>Hoja de Vida de Juan Carlos Osorio Crespo</h2>
+    </header>
+    <nav>
+        <ul class="main-nav">
+            <li class="main-nav__item"><a href="Informacion Principal.html">Información Principal</a></li>
+            <li class="main-nav__item"><a href="Experiencia Laboral.html">Experiencia Laboral</a></li>
+            <li class="main-nav__item"><a href="Referencias Personales.html">Referencias Personales</a></li>
+            <li class="main-nav__item"><a href="Referencias Familiares.html">Referencias Familiares</a></li>
+            <li class="main-nav__item"><a href="#">Estudios Realizados</a></li>
+            <li class="main-nav__item"><a href="Portafolio.html">Portafolio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <img class="foto5" src="Imagenes/Foto.jpg" alt="Foto de la hoja de vida" />
+                <div class="acordeon">
+                    <div class="bloque">
+                        <h2 class="h2">Estudio #1</h2>
+                        <p class="contenido">
+                            Gestión de redes y sistemas teleinformáticos en el Instituto Técnico Guaimaral | De Enero de
+                            2010 a Noviembre de 2012
+                        </p>
+                    </div>
+                    <div class="bloque">
+                        <h2 class="h2">Estudio #2</h2>
+                        <p class="contenido">
+                            Ingeniería de Sistemas en la Universidad Francisco de Paula Santander | De Enero de 2012 a
+                            Diciembre de 2015
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="Javascript/funciones.js"></script>
+</body>
+
+</html>

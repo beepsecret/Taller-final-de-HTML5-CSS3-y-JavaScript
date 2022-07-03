@@ -1,0 +1,146 @@
+h2 {
+    text-align: center;
+    color: red;
+}
+
+body {
+    background-color: gold;
+    width: 1024px;
+    height: 90%;
+    padding: 50px 230px;
+}
+
+.foto {
+    width: 350px;
+    height: 450px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 10px;
+    box-shadow: 2px 2px whitesmoke;
+    margin-right: 20px;
+    float: left;
+}
+
+.foto2 {
+    width: 350px;
+    height: 450px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 10px;
+    box-shadow: 2px 2px whitesmoke;
+    margin-right: 20px;
+}
+
+.foto3 {
+    width: 350px;
+    height: 450px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 10px;
+    box-shadow: 2px 2px whitesmoke;
+    margin-right: 20px;
+}
+
+.foto4 {
+    width: 350px;
+    height: 450px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 10px;
+    box-shadow: 2px 2px whitesmoke;
+    margin-right: 20px;
+}
+
+.foto5 {
+    width: 350px;
+    height: 450px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 10px;
+    box-shadow: 2px 2px whitesmoke;
+    margin-right: 20px;
+}
+
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding: 10px;
+    padding-right: 0%;
+    background-color: black;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color: aliceblue;
+    padding: 5px;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.descargar {
+    margin-left: 20%;
+    border-radius: 5px;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 10px;
+    background: #04537d;
+    color: #fff;
+    box-shadow: 0px 5px 0px #000;
+}
+
+.main-nav__item a:hover {
+    color: blue;
+}
+
+.main-nav__item a:active {
+    color: red;
+}
+
+.main-nav__item a::after {
+    content: " | ";
+}
+
+.acordeon {
+    width: 90%;
+    max-width: 35rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    float: right;
+    background-color: black;
+}
+
+.acordeon .bloque {
+    background-color: white;
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.acordeon .h2 {
+    background-color: rgb(70, 54, 153);
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.acordeon .h2:hover {
+    background-color: rgb(70, 54, 153);
+    color: var(--negro);
+    border-radius: 1rem;
+}
+
+.acordeon .contenido {
+    background-color: white;
+    height: 0;
+    padding: 0rem;
+    overflow: hidden;
+}
+
+.acordeon .bloque.activo .contenido {
+    height: 13rem;
+}

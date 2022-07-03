@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS3/EstiloPortafolio.css">
+    <script type="text/javascript" src="JavaScript/portafolio.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <title>Taller 2 de PSeInt</title>
+</head>
+
+<body>
+
+    <div class="circulos">
+        <svg class="circulo circulo1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M41.7,-14.8C48.3,6.5,43.7,30.2,25.2,46.4C6.7,62.7,-25.8,71.5,-44,58.7C-62.1,46,-65.9,11.7,-56.2,-14C-46.5,-39.7,-23.2,-56.7,-2.8,-55.8C17.6,-54.9,35.2,-36,41.7,-14.8Z"
+                transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M33.5,-35.3C42.4,-24.6,48,-12.3,51.9,3.9C55.8,20.2,58.2,40.3,49.2,55.8C40.3,71.2,20.2,82,2.3,79.6C-15.5,77.3,-31,61.9,-42.8,46.4C-54.6,31,-62.8,15.5,-64.1,-1.3C-65.5,-18.1,-59.9,-36.2,-48.1,-46.9C-36.2,-57.7,-18.1,-61,-2.9,-58.1C12.3,-55.2,24.6,-46.1,33.5,-35.3Z"
+                transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M36.5,-28.5C51.9,-21,72.2,-10.5,75.1,2.9C77.9,16.2,63.3,32.5,47.9,45.5C32.5,58.6,16.2,68.4,-3.5,72C-23.3,75.5,-46.6,72.7,-60.3,59.7C-74,46.6,-78.1,23.3,-76.4,1.7C-74.7,-20,-67.3,-39.9,-53.6,-47.4C-39.9,-54.9,-20,-49.9,-4.7,-45.2C10.5,-40.5,21,-36,36.5,-28.5Z"
+                transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo4" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M51.6,-50.1C60.9,-42.4,58.2,-21.2,53.8,-4.4C49.3,12.3,43.1,24.6,33.9,36.5C24.6,48.4,12.3,59.8,-2.5,62.3C-17.3,64.8,-34.6,58.4,-46,46.5C-57.4,34.6,-63,17.3,-58.8,4.1C-54.7,-9.1,-40.9,-18.1,-29.5,-25.9C-18.1,-33.6,-9.1,-40.1,6.1,-46.1C21.2,-52.2,42.4,-57.9,51.6,-50.1Z"
+                transform="translate(100 100)" />
+        </svg>
+    </div>
+
+    <header class="header">
+        <h1 class="h1"><a href="#inicio" title="Juan Osorio" class="a">Juan Osorio</a></h1>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="Portafolio.html" title="Inicio" class="a">Inicio</a></li>
+				<li class="li"><a href="Talleres de PSeInt.html" title="Talleres de PSeInt" class="a">Talleres de PSeInt</a></li>
+                <li class="li"><a href="Hoja de Vida/Informacion Principal.html" title="Hoja de vida" class="a">Hoja de
+                        Vida</a></li>
+                <li class="li"><a href="#about" title="Acerca de mi" class="a">Sobre mi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="seccion about" id="about">
+            <h2 class="h2">Taller #2 de PSeInt</h2>
+            <p class="p">Aquí te presento el taller #2: Condicionales</p>
+
+            <p class="p">
+                1. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a
+                18 años, deberá mostrar en pantalla: Usted es mayor de edad.<br><br>
+                <button class="button" id="button" type="button" onclick="mostrarCodigo();">Mostrar
+                    código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo1">
+Proceso primerEjercicio
+	
+    Definir edad Como Entero;
+                        
+    Escribir "Digite su edad";
+    Leer edad;
+                        
+    Si edad > 17 Entonces
+        Escribir "Usted es mayor de edad";
+    FinSi
+                        
+FinProceso
+</pre><br>
+            </p>
+            <p class="p">
+                2. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años,
+                deberá mostrar en pantalla: Usted aún es un niño(a).<br><br>
+                <button class="button" id="button2" type="button" onclick="mostrarCodigoDos();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo2">
+Proceso segundoEjercicio
+	
+	Definir edad Como Entero;
+	
+	Escribir "Digite su edad";
+	Leer edad;
+	
+	Si edad < 18 Entonces
+		Escribir "Usted aún es un niño(a)";
+	FinSi
+	
+FinProceso
+</pre><br>
+            </p>
+            <p class="p">
+                3. Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona
+                es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo] usted es mayor de
+                edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18 años, entonces,
+                deberá imprimirse el siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede
+                entrar a la fiesta, por favor devuélvase a su casa.<br><br>
+                <button class="button" id="button3" type="button" onclick="mostrarCodigoTres();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo3">
+Proceso tercerEjercicio
+	
+	Definir nombre Como Caracter;
+	Definir apellido Como Caracter;
+	Definir edad Como Entero;
+	
+	Escribir "Digite su nombre";
+	Leer nombre;
+	
+	Escribir "Digite su apellido";
+	Leer apellido;
+	
+	Escribir "Digite su edad";
+	Leer edad;
+	
+	Si edad < 18 Entonces
+		Escribir nombre, " ", apellido, " usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa";
+	SiNo
+		Escribir nombre, " ", apellido, " usted es mayor de edad, por lo tanto puede entrar a la fiesta";
+	FinSi
+	
+FinProceso
+</pre><br>
+            </p>
+            <p class="p">
+                4. La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el
+                Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren
+                sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar películas
+                disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si
+                se llegan a presentar daños u otra novedad sobre la película.<br><br>
+                <button class="button" id="button4" type="button" onclick="mostrarCodigoCuatro();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo4">
+Proceso cuartoEjercicio
+	
+	Definir nombrePelicula, pelicula, peliculaDos, observacion, observacionDos Como Caracter;
+	Definir disponibilidadP1, disponibilidadP2 Como Logico;
+	Definir opcion Como Entero;
+	
+	pelicula <- "avatar";
+	peliculaDos <- "terminator";
+	disponibilidadP1 <- Verdadero;
+	disponibilidadP2 <- Falso;
+	
+	Escribir "Elija una opción:";
+	Escribir "1: Alquilar Película";
+	Escribir "2: Consultar Película";
+	Escribir "3: Recibir Película";
+	Leer opcion;
+	
+	Segun opcion Hacer
+		
+		1: Escribir "Escribe el nombre de la película que deseas alquilar";
+			Leer nombrePelicula;
+			
+			Si nombrePelicula <> pelicula Y nombrePelicula <> peliculaDos Entonces
+				Escribir "No tenemos esa película en nuestra tienda";
+			FinSi
+			
+			Si nombrePelicula = pelicula Y disponibilidadP1 = Falso Entonces
+				Escribir "Esa película no se encuentra disponible";
+			FinSi
+			
+			Si nombrePelicula = peliculaDos Y disponibilidadP2 = Falso Entonces
+				Escribir "Esa película no se encuentra disponible";
+			FinSi
+			
+			Si nombrePelicula = pelicula Y disponibilidadP1 = Verdadero Entonces
+				disponibilidadP1 <- Falso;
+				Escribir "Selección Exitosa";
+			FinSi
+			
+			Si nombrePelicula = peliculaDos Y disponibilidadP2 = Verdadero Entonces
+				disponibilidadP2 <- Falso;
+				Escribir "Selección Exitosa";
+			FinSi
+			
+		2: Escribir "Estas son las películas que se encuentran disponibles:";
+			Si disponibilidadP1 Entonces
+				Escribir pelicula;
+			FinSi
+			Si disponibilidadP2 Entonces
+				Escribir peliculaDos;
+			FinSi
+			
+		3: Escribir "Escribe el nombre de la película que vas a recibir";
+			Leer nombrePelicula;
+			
+			Si disponibilidadP1 Y disponibilidadP2 Entonces
+				Escribir "Esa película ya se encuentra en nuestra tienda";
+			SiNo
+				Si nombrePelicula = pelicula Entonces
+					disponibilidadP1 <- Verdadero;
+					Escribir "Observaciones";
+					Leer observacion;
+				SiNo
+					Si nombrePelicula = peliculaDos Entonces
+						disponibilidadP2 <- Verdadero;
+						Escribir "Observaciones";
+						Leer observacionDos;
+					SiNo
+						Escribir "Esa película no hace parte de nuestra tienda";
+					FinSi
+				FinSi
+			FinSi
+			
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+			
+	FinSegun
+	
+FinProceso
+</pre><br>
+            </p>
+            <p class="p">
+                5. La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para
+                poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas
+                características que deben indicársele al cliente para que pueda escoger el producto a comprar. Para cada
+                cliente, se tienen las opciones de compra de producto, consulta de precios por producto y devoluciones
+                en caso de que se presenten.<br><br>
+                <button class="button" id="button5" type="button" onclick="mostrarCodigoCinco();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo5">
+Proceso quintoEjercicio
+	
+	Definir mensaje, producto, productoDos Como Caracter;
+	Definir productoPrecio, productoPrecioDos Como Real;
+	Definir opcion, cantidad, cantidadDisponibleProducto, cantidadDisponibleProductoDos Como Entero;
+	
+	producto <- "paracetamol";
+	productoDos <- "ibuprofeno";
+	productoPrecio <- 2000;
+	productoPrecioDos <- 3000;
+	cantidadDisponibleProducto <- 10;
+	cantidadDisponibleProductoDos <- 10;
+	
+	Escribir "Droguería Mi Salud";
+	Escribir "Digite el número de la opción que desea seleccionar";
+	Escribir "1. Comprar Producto";
+	Escribir "2. Consultar producto";
+	Escribir "3. Devolver producto";
+	Leer opcion;
+	
+	Segun opcion Hacer
+		
+		1: Escribir "Digite el nombre del producto que quiere comprar";
+			Escribir "Paracetamol, Cantidad: ", cantidadDisponibleProducto;
+			Escribir "Ibuprofeno, Cantidad: ", cantidadDisponibleProductoDos;
+			Leer mensaje;
+			
+			Si mensaje <> producto Y mensaje <> productoDos Entonces
+				Escribir "Ese producto no se encuentra disponible en nuestra droguería";
+			SiNo
+				
+				Escribir "Digite la cantidad que quiere comprar";
+				Leer  cantidad;
+				
+				Si mensaje = producto Entonces
+					Si cantidad > 0 Y cantidadDisponibleProducto >= cantidad Entonces
+						cantidadDisponibleProducto <- cantidadDisponibleProducto - cantidad;
+						Escribir "Su compra ha sido exitosa";
+						Escribir "Las unidades restantes de este producto son: ", cantidadDisponibleProducto;
+					SiNo
+						Escribir "La cantidad no puede ser inferior a 1 ni superior a ", cantidadDisponibleProducto;
+					FinSi
+				FinSi
+				
+				Si mensaje = productoDos Entonces
+					Si cantidadDisponibleProductoDos >= cantidad Entonces
+						cantidadDisponibleProductoDos <- cantidadDisponibleProductoDos - cantidad;
+						Escribir "Su compra ha sido exitosa";
+						Escribir "Las unidades restantes de este producto son: ", cantidadDisponibleProductoDos;
+					SiNo
+						Escribir "La cantidad no puede ser inferior a 1 ni superior a ", cantidadDisponibleProductoDos;
+					FinSi
+				FinSi
+			FinSi
+			
+		2: Escribir "Digite el producto del cual quiere consultar su precio:";
+			Escribir "Paracetamol";
+			Escribir "Ibuprofeno";
+			Leer mensaje;
+			Si mensaje = producto Entonces
+				Escribir "El precio del ", producto, " es de: $", productoPrecio;
+			FinSi
+			Si mensaje = productoDos Entonces
+				Escribir "El precio del ", productoDos, " es de: $", productoPrecioDos;
+			FinSi
+			Si mensaje <> producto Y mensaje <> productoDos Entonces
+				Escribir "Ese producto no se encuentra disponible";
+			FinSi
+			
+		3: Escribir "Digite el producto que quiere devolver";
+			Leer mensaje;
+			Si mensaje <> producto Y mensaje <> productoDos Entonces
+				Escribir "Ese producto no hace parte de nuestra droguería";
+			SiNo
+				Escribir "Digite la cantidad que quiere devolver";
+				Leer  cantidad;
+				Si mensaje = producto Entonces
+					cantidadDisponibleProducto <- cantidadDisponibleProducto + cantidad;
+					Escribir "Devolución exitosa";
+					Escribir "Unidaes disponibles de ", producto, ": ", cantidadDisponibleProducto;
+				FinSi
+				Si mensaje = productoDos Entonces
+					cantidadDisponibleProductoDos <- cantidadDisponibleProductoDos + cantidad;
+					Escribir "Devolución exitosa";
+					Escribir "Unidaes disponibles de ", productoDos, ": ", cantidadDisponibleProductoDos;
+				FinSi
+			FinSi
+			
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+			
+	FinSegun
+	
+FinProceso
+</pre><br>
+            </p>
+            <p class="p">
+                6. El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las
+                respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados a sus
+                clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por
+                parte del cliente. También debe existir registro de salida del taller con las novedades y otra de
+                arreglos hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la
+                motocicleta al entregarla.<br><br>
+                <button class="button" id="button6" type="button" onclick="mostrarCodigoSeis();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo6">
+Proceso sextoEjercicio
+	
+	Definir placa, placaEjemplo, registroIngreso, observacion, registroSalida, registroArreglos Como Caracter;
+	Definir opcion Como Entero;
+	
+	placa <- "";
+	placaEjemplo <- "AAA-123";
+	
+	Escribir "Taller de motos El Maquinista";
+	Escribir "Digite el número de la opción que desea seleccionar";
+	Escribir "1. Registro de ingreso de la motocicleta";
+	Escribir "2. Registro de salida de la motocicleta";
+	Leer opcion;
+	
+	Segun opcion Hacer
+		
+		1:  Escribir "Digite la placa de la moto:";
+			Leer placa;
+			Si placa <> "" Entonces
+				Escribir "Digite la fecha de ingreso de la moto al taller";
+				Escribir "En este formato: dia/mes/año";
+				Leer registroIngreso;
+				Si registroIngreso <> "" Entonces
+					Escribir "Digite las observaciones que tenga el cliente";
+					Leer observacion;
+					Escribir "Registro de ingreso exitoso";
+				SiNo
+					Escribir "El dato no puede ser vacío";
+				FinSi
+			SiNo
+				Escribir "El dato no puede ser vacío";
+			FinSi
+			
+		2:  Escribir "Digite la placa de la moto";
+			Leer placa;
+			Si placaEjemplo = placa Entonces
+				Escribir "Digite la fecha de salida de la moto del taller";
+				Escribir "En este formato: dia/mes/año";
+				Leer registroSalida;
+				Si registroSalida <> "" Entonces
+					Escribir "Digite los arreglos realizados en la moto por parte del mecánico";
+					Leer registroArreglos;
+					Escribir "Registra de salida exitoso";
+				SiNo
+					Escribir "El dato no puede ser vacío";
+				FinSi
+			SiNo
+				Escribir "No hay registro de esa placa";
+			FinSi
+			
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+			
+	FinSegun
+	
+FinProceso
+</pre><br>
+            </p>
+            <p class="p">
+                7. La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de
+                masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada
+                adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango
+                se encuentra (bajo peso, normal, sobrepeso y obeso).<br><br>
+                <button class="button" id="button7" type="button" onclick="mostrarCodigoSiete();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo7">
+Proceso septimoEjercicio
+	
+	Definir peso, estatura, imc Como Real;
+	
+	Escribir "Secretaría de Salud Municipal";
+	Escribir "Para calcular el índice de masa corporal (IMC), digite los siguientes datos:";
+	Escribir "Digite su peso:";
+	Leer peso;
+	
+	Si peso >= 38.4 Y peso <= 600 Entonces
+		Escribir "Digite su estatura:";
+		Leer estatura;
+		Si estatura >= 1.44 Y estatura <= 2.72 Entonces
+			imc <- peso / estatura ^ 2;
+			Si imc < 18.5 Entonces
+				Escribir "Su IMC es ", imc, " lo que indica que su peso está en la categoría:";
+				Escribir "Bajo peso";
+			FinSi
+			Si imc >= 18.5 Y imc <= 24.9 Entonces
+				Escribir "Su IMC es ", imc, " lo que indica que su peso está en la categoría:";
+				Escribir "Normal";
+			FinSi
+			Si imc >= 25 Y imc <= 29.9 Entonces
+				Escribir "Su IMC es ", imc, " lo que indica que su peso está en la categoría:";
+				Escribir "Sobrepeso";
+			FinSi
+			Si imc >= 30 Entonces
+				Escribir "Su IMC es ", imc, " lo que indica que su peso está en la categoría:";
+				Escribir "Obesidad";
+			FinSi
+		SiNo
+			Escribir "Su estatura no puede ser inferior a 1.44 m ni superior a 3 m";
+		FinSi
+	SiNo
+		Escribir "Su peso no puede ser inferior a 38.4 kg ni superior a 600 kg";
+	FinSi
+	
+FinProceso
+</pre><br>
+            </p>
+            <p class="p">
+                8. El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita
+                registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas
+                características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación
+                permita registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente.<br><br>
+                <button class="button" id="button8" type="button" onclick="mostrarCodigoOcho();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo8">
+Proceso octavoEjercicio
+	
+	Definir torta, torta2, torta3, cliente, pedido, clienteEjemplo, pedidoEjemplo Como Caracter;
+	Definir opcion Como Entero;
+	
+	pedido <- "";
+	clienteEjemplo <- "Juan Osorio";
+	pedidoEjemplo <- "Torta de Chocolate";
+	torta <- "Torta de Chocolate";
+	torta2 <- "Torta de 3 Leches";
+	torta3 <- "Torta de Vainilla";
+	
+	Escribir "Pastelería";
+	Escribir "";
+	Escribir "Digite el número de la opción que desea realizar";
+	Escribir "1. Registrar Pedido";
+	Escribir "2. Mostrar tortas disponibles";
+	Escribir "3. Mostrar ventas del día";
+	Leer opcion;
+	
+	Segun opcion Hacer
+		
+		1: Escribir "Digite el nombre del cliente";
+			Leer cliente;
+			Si cliente <> "" Entonces
+				Limpiar Pantalla;
+				Escribir "Digite el tipo de torta que quiere comprar";
+				Escribir "Lista de tortas disponibles:";
+				Escribir "";
+				Escribir torta;
+				Escribir "";
+				Escribir torta2;
+				Escribir "";
+				Escribir torta3;
+				Leer pedido;
+				Si pedido <> "" Entonces
+					Si pedido = torta Entonces
+						Escribir "Registro exitoso";
+					SiNo
+						Si pedido = torta2 Entonces
+							Escribir "Registro exitoso";
+						SiNo
+							Si pedido = torta3 Entonces
+								Escribir "Registro exitoso";
+							SiNo
+								Escribir "Esa torta no se encuentra disponible";
+							FinSi
+						FinSi
+					FinSi					
+				SiNo
+					Escribir "El dato no puede ser vacío";
+				FinSi
+			SiNo
+				Escribir "El dato no puede ser vacío";
+			FinSi
+			
+		2:  Limpiar Pantalla;
+			Escribir "Lista de tortas disponibles:";
+			Escribir "";
+			Escribir torta;
+			Escribir "Sabor: Chocolate";
+			Escribir "Decoración: Crema de chocolate y M&Ms cubriendo la superficie";
+			Escribir "";
+			Escribir torta2;
+			Escribir "Sabor: Dulce de Leche";
+			Escribir "Decoración: Crema Chantilly con cerezas";
+			Escribir "";
+			Escribir torta3;
+			Escribir "Sabor: Vainilla";
+			Escribir "Decoración: Crema chantilly, merengues y duraznos";
+			
+		3: Si clienteEjemplo <> "" Entonces
+				Si pedidoEjemplo <> "" Entonces
+					Escribir "Ventas del día:";
+					Escribir clienteEjemplo;
+					Escribir pedidoEjemplo;
+				SiNo
+					Escribir "No hubo ninguna venta el día de hoy";
+				FinSi
+			FinSi
+			
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+			
+	FinSegun
+	
+FinProceso
+</pre><br>
+            </p>
+            <p class="p">
+                9. El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de
+                diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio
+                solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si
+                desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios
+                para realizar cada cálculo y mostrar su respectivo resultado.<br><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/B4XU3HsBkZg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><br><br>
+                <button class="button" id="button9" type="button" onclick="mostrarCodigoNueve();">Mostrar
+                    código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo9">
+Proceso novenoEjercicio
+	
+	Definir base, baseMenor, altura, largo, ancho, resultado Como Real;
+	Definir opcion Como Entero;
+	
+	Escribir "Escoja le figura geómetrica de la que desea calcular el área";
+	Escribir "1. Rectángulo";
+	Escribir "2. Triángulo";
+	Escribir "3. Trapecio";
+	Leer opcion;
+	
+	Segun opcion Hacer
+		
+		1: Escribir "Digite el valor del largo del rectángulo";
+			Leer largo;
+			Escribir "Digite el valor del ancho del rectángulo";
+			Leer ancho;
+			resultado <- largo * ancho;
+			Escribir "El valor del área del rectángulo es de: ", resultado;
+			
+		2: Escribir "Digite el valor de la base del triángulo";
+			Leer base;
+			Escribir "Digite el valor de la altura del triángulo";
+			Leer altura;
+			resultado <- base * altura / 2;
+			Escribir "El valor del área del triángulo es de: ", resultado;
+				
+		3: Escribir "Digite el valor de la base mayor del trapecio";
+			Leer base;
+			Escribir "Digite el valor de la base menor del trapecio";
+			Leer baseMenor;
+			Escribir "Digite el valor de la altura del trapecio";
+			Leer altura;
+			resultado <- ((base + baseMenor) * altura) / 2;
+			Escribir "El valor del área del trapecio es de: ", resultado;
+			
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+			
+	FinSegun
+	
+FinProceso
+</pre><br>
+            </p>
+            <p class="p">
+                10. El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una
+                aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los
+                atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o
+                consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor
+                no puede ser mayor al valor que tiene en la cuenta.<br><br>
+                <button class="button" id="button10" type="button" onclick="mostrarCodigoDiez();">Mostrar
+                    código</button><br><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo10">
+Proceso decimoEjercicio
+	
+	Definir titular, mensaje Como Caracter;
+	Definir cantidad, ingreso, retiro Como Real;
+	Definir opcion Como Entero;
+	
+	titular <- "juan osorio";
+	cantidad <- 1000.0;
+	
+	Escribir "Su Banco Fiel";
+	Escribir "";
+	Escribir "Digite el nombre del titular";
+	Leer mensaje;
+	
+	Si mensaje = titular Entonces
+		Limpiar Pantalla;
+		Escribir "Titular de la cuenta: ", titular;
+		Escribir "Número de la cuenta: 7481950263";
+		Escribir "Tipo de cuenta: Ahorros";
+		Escribir "";
+		Escribir "Elija una opción:";
+		Escribir "1. Realizar ingreso";
+		Escribir "2. Realizar retiro";
+		Escribir "3. Consulta";
+		Leer opcion;
+		
+		Segun opcion Hacer
+			
+			1: Escribir "Digite la cantidad de dinero que desea ingresar";
+				Leer ingreso;
+				Si ingreso > 0 Entonces
+					cantidad <- cantidad + ingreso;
+					Escribir "Su saldo actual quedó en: $", cantidad;
+				SiNo
+					Escribir "La cantidad de dinero a ingresar no puede ser 0 o inferior";			
+				FinSi
+				
+			2: Escribir "Digite la cantidad de dinero que desea retirar";
+				Leer retiro;
+				Si retiro <= cantidad Entonces
+					cantidad <- cantidad - retiro;
+					Escribir "Su saldo actual quedó en: $", cantidad;
+				SiNo
+					Escribir "La cantidad de dinero a retirar no puede superar la cantidad de dinero disponible";
+				FinSi
+				
+			3: Escribir "El saldo que tiene actualmente es de: $", cantidad;
+				
+			De Otro Modo:
+				Escribir "La opción elegida no existe";
+			
+		FinSegun	
+		
+	SiNo
+		Escribir "No hay ninguna cuenta a nombre asociada a ese nombre";
+	FinSi
+	
+FinProceso
+</pre><br>
+            </p>
+        </section>
+
+        <section class="seccion about" id="about">
+            <h2 class="h2">Sobre mi</h2>
+            <p class="p">Administrador de redes de cómputo y sistemas teleinformáticos, mantenimiento de computadores,
+                desarrollador de aplicaciones de escritorio, web y móviles.</p>
+
+            <ul class="rrss">
+                <li class="li">
+                    <a href="https://github.com/beepsecret" class="a" title="Nombre" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="https://www.linkedin.com/in/juancars/" class="a" title="Nombre" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <span class="span">Hecho por Juan Carlos Osorio Crespo</span>
+    </footer>
+
+</body>
+
+</html>

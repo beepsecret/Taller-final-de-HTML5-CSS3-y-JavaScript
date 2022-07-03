@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS3/EstiloPortafolio.css">
+    <script type="text/javascript" src="JavaScript/portafolio.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <title>Taller 3 de Java</title>
+</head>
+<body>
+    
+    <div class="circulos">
+        <svg class="circulo circulo1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M41.7,-14.8C48.3,6.5,43.7,30.2,25.2,46.4C6.7,62.7,-25.8,71.5,-44,58.7C-62.1,46,-65.9,11.7,-56.2,-14C-46.5,-39.7,-23.2,-56.7,-2.8,-55.8C17.6,-54.9,35.2,-36,41.7,-14.8Z"
+                transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M33.5,-35.3C42.4,-24.6,48,-12.3,51.9,3.9C55.8,20.2,58.2,40.3,49.2,55.8C40.3,71.2,20.2,82,2.3,79.6C-15.5,77.3,-31,61.9,-42.8,46.4C-54.6,31,-62.8,15.5,-64.1,-1.3C-65.5,-18.1,-59.9,-36.2,-48.1,-46.9C-36.2,-57.7,-18.1,-61,-2.9,-58.1C12.3,-55.2,24.6,-46.1,33.5,-35.3Z"
+                transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M36.5,-28.5C51.9,-21,72.2,-10.5,75.1,2.9C77.9,16.2,63.3,32.5,47.9,45.5C32.5,58.6,16.2,68.4,-3.5,72C-23.3,75.5,-46.6,72.7,-60.3,59.7C-74,46.6,-78.1,23.3,-76.4,1.7C-74.7,-20,-67.3,-39.9,-53.6,-47.4C-39.9,-54.9,-20,-49.9,-4.7,-45.2C10.5,-40.5,21,-36,36.5,-28.5Z"
+                transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo4" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M51.6,-50.1C60.9,-42.4,58.2,-21.2,53.8,-4.4C49.3,12.3,43.1,24.6,33.9,36.5C24.6,48.4,12.3,59.8,-2.5,62.3C-17.3,64.8,-34.6,58.4,-46,46.5C-57.4,34.6,-63,17.3,-58.8,4.1C-54.7,-9.1,-40.9,-18.1,-29.5,-25.9C-18.1,-33.6,-9.1,-40.1,6.1,-46.1C21.2,-52.2,42.4,-57.9,51.6,-50.1Z"
+                transform="translate(100 100)" />
+        </svg>
+    </div>
+
+    <header class="header">
+        <h1 class="h1"><a href="#inicio" title="Juan Osorio" class="a">Juan Osorio</a></h1>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="Portafolio.html" title="Inicio" class="a">Inicio</a></li>
+                <li class="li"><a href="Talleres de Java.html" title="Talleres de Java" class="a">Talleres de Java</a></li>
+                <li class="li"><a href="Hoja de Vida/Informacion Principal.html" title="Hoja de vida" class="a">Hoja de
+                        Vida</a></li>
+                <li class="li"><a href="#about" title="Acerca de mi" class="a">Sobre mi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="seccion about" id="about">
+            <h2 class="h2">Taller #3 de Java</h2>
+            <p class="p">Aquí te presento el taller #3: Ciclos</p>
+            <p class="p">
+                1. Realizar la siguiente figura por medio del ciclo Para:<br><br>
+                <img src="Imagenes/CicloPara.png" alt="Imagen" class="imagen" loading="lazy"><br>
+                <button class="button" id="button" type="button" onclick="mostrarCodigo();">Mostrar código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo1">
+package pseint.taller.tres;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Uno {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        for (int i = 0; i < 11; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                2. Realizar un programa el cual solicite su nombre, apellidos, edad y estatura.<br><br>
+                <img src="Imagenes/CicloMientrasHacer.png" alt="Imagen" class="imagen" loading="lazy"><br>
+                <button class="button" id="button2" type="button" onclick="mostrarCodigoDos();">Mostrar código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo2">
+package pseint.taller.tres;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Dos {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        int i = 0;
+        int j;
+        while (i < 10) {
+            j = 10;
+            while (j > 0) {
+                if (j - 1 > i) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("*");
+                }
+                j = j - 1;
+            }
+            i = i + 1;
+            System.out.println("");
+        }
+
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                3. Realizar un programa el cual solicite su nombre y apellidos, también debe capturar nombre y
+                apellidos de su padre y madre. Al finalizar debe imprimir en pantalla el siguiente mensaje "Yo
+                [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del Padre].<br><br>
+                <img src="Imagenes/CicloHastaQue.png" alt="Imagen" class="imagen" loading="lazy"><br>
+                <button class="button" id="button3" type="button" onclick="mostrarCodigoTres();">Mostrar código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo3">
+package pseint.taller.tres;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Tres {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        int i, j, k, l, m, cantidad;
+        i = 1;
+        cantidad = 22;
+
+        do {
+            j = cantidad - 1;
+            k = ((cantidad - 1) - i) / 2;
+            do {
+                if ((j >= 1 & j <= k) || (j > k + i & j <= cantidad)) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("*");
+                }
+                j -= 1;
+            } while (j > 0);
+            System.out.println("");
+            i += 2;
+        } while (i < cantidad);
+        i = 0;
+        l = 0;
+        m = 3;
+        do {
+            j = cantidad - 1;
+            k = ((cantidad - 1) - m) / 2;
+            do {
+                if ((j >= 1 & j <= k) || (j > k + m & j <= cantidad)) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("*");
+                }
+                j -= 1;
+            } while (j > 0);
+            l = m + l;
+            if (i >= 1) {
+                m += 2;
+            }
+            i += 1;
+            System.out.println("");
+        } while (i < 4);
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                4. Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por
+                medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear
+                la tabla del 5, entonces el resultado debería ser el siguiente:.<br><br>
+                <img src="Imagenes/Tabla de Multiplicar.png" alt="Imagen" class="imagen" loading="lazy"><br>
+                <button class="button" id="button4" type="button" onclick="mostrarCodigoCuatro();">Mostrar
+                    código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo4">
+package pseint.taller.tres;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Cuatro {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        int contador;
+        System.out.println("");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite el número de la tabla de multiplicar que desea");
+        int tabla = sc.nextInt();
+        System.out.println("Tabla del " + tabla);
+        for (contador = 1; contador < 11; contador++) {
+            System.out.println(contador + " * " + tabla + " = " + tabla * contador);
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                5. Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee
+                terminar dicho ciclo.<br><br>
+                <img src="Imagenes/Menu.png" alt="Imagen" class="imagen" loading="lazy"><br>
+                <button class="button" id="button5" type="button" onclick="mostrarCodigoCinco();">Mostrar
+                    código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo5">
+package pseint.taller.tres;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Cinco {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        int opcion = 0;
+        while (opcion != 3) {
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("Menú de usuario\n1. Captura nombre\n2. Saludar persona\n3. Salir del sistema"));
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                6. Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar
+                contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono
+                y organización. Se requiere que la aplicación permita añadir 3 contactos verificando que el número no
+                esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde
+                que el sistema debe terminar cuando el usuario así lo indique.<br><br>
+                <button class="button" id="button6" type="button" onclick="mostrarCodigoSeis();">Mostrar código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo6">
+package pseint.taller.tres;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Seis {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        String buscar, verificarTelefono;
+        String nombre, telefono, organizacion;
+        String nombre2, telefono2, organizacion2;
+        String nombre3, telefono3, organizacion3;
+        int opcion;
+
+        nombre = "";
+        nombre2 = "";
+        nombre3 = "";
+        telefono = "";
+        telefono2 = "";
+        telefono3 = "";
+        organizacion = "";
+        organizacion2 = "";
+        organizacion3 = "";
+
+        opcion = Integer.parseInt(JOptionPane.showInputDialog("Agenda de contactos\n1. Añadir contacto\n2. Buscar contacto\n3. Eliminar contacto\n4. Salir de la aplicación"));
+
+        while (opcion != 4) {
+
+            switch (opcion) {
+
+                case 1 -> {
+                    if (telefono.equals("") == false && telefono2.equals("") == false && telefono3.equals("") == false) {
+                        JOptionPane.showMessageDialog(null, "No se pueden registrar más de 3 contactos");
+                    } else {
+                        verificarTelefono = JOptionPane.showInputDialog("Digite el número de teléfono del contacto");
+                        if (telefono.equals("") && verificarTelefono.equals(telefono) == false & verificarTelefono.equals(telefono2) == false & verificarTelefono.equals(telefono3) == false) {
+                            telefono = verificarTelefono;
+                            nombre = JOptionPane.showInputDialog("Digite el nombre del contacto:");
+                            organizacion = JOptionPane.showInputDialog("Digite la organización a la que pertenece el contacto:");
+                            JOptionPane.showMessageDialog(null, "Registro exitoso");
+                        } else if (telefono2.equals("") && verificarTelefono.equals(telefono) == false & verificarTelefono.equals(telefono2) == false & verificarTelefono.equals(telefono3) == false) {
+                            telefono2 = verificarTelefono;
+                            nombre2 = JOptionPane.showInputDialog("Digite el nombre del contacto:");
+                            organizacion2 = JOptionPane.showInputDialog("Digite la organización a la que pertenece el contacto:");
+                            JOptionPane.showMessageDialog(null, "Registro exitoso");
+                        } else if (telefono3.equals("") && verificarTelefono.equals(telefono) == false & verificarTelefono.equals(telefono2) == false & verificarTelefono.equals(telefono3)  == false) {
+                            telefono3 = verificarTelefono;
+                            nombre3 = JOptionPane.showInputDialog("Digite el nombre del contacto:");
+                            organizacion3 = JOptionPane.showInputDialog("Digite la organización a la que pertenece el contacto:");
+                            JOptionPane.showMessageDialog(null, "Registro exitoso");
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Ese número de teléfono ya se encuetra registrado");
+                        }
+                    }
+                }
+                case 2 -> {
+                    buscar = JOptionPane.showInputDialog("Digite el telefono del contacto que quiere buscar");
+                    if (buscar.equals(telefono)) {
+                        JOptionPane.showMessageDialog(null, "Nombre: " + nombre + "\nTeléfono: " + telefono + "\nOrganización: " + organizacion);
+                    } else if (buscar.equals(telefono2)) {
+                        JOptionPane.showMessageDialog(null, "Nombre: " + nombre2 + "\nTeléfono: " + telefono2 + "\nOrganización: " + organizacion2);
+                    } else if (buscar.equals(telefono3)) {
+                        JOptionPane.showMessageDialog(null, "Nombre: " + nombre3 + "\nTeléfono: " + telefono3 + "\nOrganización: " + organizacion3);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Ese contacto no se encuentra registrado");
+                    }
+                }
+                case 3 -> {
+                    if (nombre.equals("") & nombre2.equals("") & nombre3.equals("")) {
+                        JOptionPane.showMessageDialog(null, "No hay contactos registrados");
+                    } else {
+                        buscar = JOptionPane.showInputDialog("Digite el telefono del contacto que desea eliminar");
+                        if (buscar.equals(telefono)) {
+                            nombre = "";
+                            telefono = "";
+                            organizacion = "";
+                            JOptionPane.showMessageDialog(null, "El contacto ha sido eliminado");
+                        } else if (buscar.equals(telefono2)) {
+                            nombre2 = "";
+                            telefono2 = "";
+                            organizacion2 = "";
+                            JOptionPane.showMessageDialog(null, "El contacto ha sido eliminado");
+                        } else if (buscar.equals(telefono3)) {
+                            nombre3 = "";
+                            telefono3 = "";
+                            organizacion3 = "";
+                            JOptionPane.showMessageDialog(null, "El contacto ha sido eliminado");
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Ese contacto no se encuentra registrado");
+                        }
+                    }
+                }
+                default ->
+                    JOptionPane.showMessageDialog(null, "La opción elegida no existe");
+            }
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("Agenda de contactos\n1. Añadir contacto\n2. Buscar contacto\n3. Eliminar contacto\n4. Salir de la aplicación"));
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                7. El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del
+                barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas
+                instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y marca, y
+                los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir
+                la opción de ingresar al parqueadero, retirar del parqueadero y consultar si un vehículo se encuentra en
+                el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga en
+                presente que el parqueadero solo puede almacenar máximo 5 vehículos.<br><br>
+                <button class="button" id="button7" type="button" onclick="mostrarCodigoSiete();">Mostrar
+                    código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo7">
+package pseint.taller.tres;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Siete {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        String verificarPlaca;
+        String nombre, telefono;
+        String nombre2, telefono2;
+        String nombre3, telefono3;
+        String nombre4, telefono4;
+        String nombre5, telefono5;
+        String placa, marca;
+        String placa2, marca2;
+        String placa3, marca3;
+        String placa4, marca4;
+        String placa5, marca5;
+        boolean ingresar, ingresar2, ingresar3, ingresar4, ingresar5;
+        int opcion, contador;
+
+        nombre = "";
+        nombre2 = "";
+        nombre3 = "";
+        nombre4 = "";
+        nombre5 = "";
+        telefono = "";
+        telefono2 = "";
+        telefono3 = "";
+        telefono4 = "";
+        telefono5 = "";
+        marca = "";
+        marca2 = "";
+        marca3 = "";
+        marca4 = "";
+        marca5 = "";
+        placa = "";
+        placa2 = "";
+        placa3 = "";
+        placa4 = "";
+        placa5 = "";
+        ingresar = false;
+        ingresar2 = false;
+        ingresar3 = false;
+        ingresar4 = false;
+        ingresar5 = false;
+        contador = 0;
+
+        opcion = Integer.parseInt(JOptionPane.showInputDialog("Parqueadero El Guardián\n1. Registrar Vehículo\n2. Ingresar al parqueadero\n3. Retirar del parqueadero\n4. Consultar si el vehículo se encuentra en el parqueadero\n5. Salir de la aplicación"));
+
+        while (opcion != 5) {
+
+            switch (opcion) {
+
+                case 1 -> {
+                    if (contador < 5) {
+                        verificarPlaca = JOptionPane.showInputDialog("Digite la placa del vehículo que desea registrar");
+                        if (verificarPlaca.equals(placa) == false & verificarPlaca.equals(placa2) == false & verificarPlaca.equals(placa3) == false & verificarPlaca.equals(placa4) == false & verificarPlaca.equals(placa5) == false & contador == 0) {
+                            placa = verificarPlaca;
+                            marca = JOptionPane.showInputDialog("Digite la marca");
+                            nombre = JOptionPane.showInputDialog("Digite el nombre completo del cliente");
+                            telefono = JOptionPane.showInputDialog("Digite el teléfono del cliente");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro exitoso");
+                        } else if (verificarPlaca.equals(placa) == false & verificarPlaca.equals(placa2) == false & verificarPlaca.equals(placa3) == false & verificarPlaca.equals(placa4) == false & verificarPlaca.equals(placa5) == false & contador == 1) {
+                            placa2 = verificarPlaca;
+                            marca2 = JOptionPane.showInputDialog("Digite la marca");
+                            nombre2 = JOptionPane.showInputDialog("Digite el nombre completo del cliente");
+                            telefono2 = JOptionPane.showInputDialog("Digite el teléfono del cliente");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro exitoso");
+                        } else if (verificarPlaca.equals(placa) == false & verificarPlaca.equals(placa2) == false & verificarPlaca.equals(placa3) == false & verificarPlaca.equals(placa4) == false & verificarPlaca.equals(placa5) == false & contador == 2) {
+                            placa3 = verificarPlaca;
+                            marca3 = JOptionPane.showInputDialog("Digite la marca");
+                            nombre3 = JOptionPane.showInputDialog("Digite el nombre completo del cliente");
+                            telefono3 = JOptionPane.showInputDialog("Digite el teléfono del cliente");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro exitoso");
+                        } else if (verificarPlaca.equals(placa) == false & verificarPlaca.equals(placa2) == false & verificarPlaca.equals(placa3) == false & verificarPlaca.equals(placa4) == false & verificarPlaca.equals(placa5) == false & contador == 3) {
+                            placa4 = verificarPlaca;
+                            marca4 = JOptionPane.showInputDialog("Digite la marca");
+                            nombre4 = JOptionPane.showInputDialog("Digite el nombre completo del cliente");
+                            telefono4 = JOptionPane.showInputDialog("Digite el teléfono del cliente");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro exitoso");
+                        } else if (verificarPlaca.equals(placa) == false & verificarPlaca.equals(placa2) == false & verificarPlaca.equals(placa3) == false & verificarPlaca.equals(placa4) == false & verificarPlaca.equals(placa5) == false & contador == 4) {
+                            placa5 = verificarPlaca;
+                            marca5 = JOptionPane.showInputDialog("Digite la marca");
+                            nombre5 = JOptionPane.showInputDialog("Digite el nombre completo del cliente");
+                            telefono5 = JOptionPane.showInputDialog("Digite el teléfono del cliente");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro exitoso");
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Esa placa ya se encuentra registrada");
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(null, "No se pueden registrar más de 5 vehículos");
+                    }
+                }
+                case 2 -> {
+                    if (ingresar == true & ingresar2 == true & ingresar3 == true & ingresar4 == true & ingresar5 == true) {
+                        JOptionPane.showMessageDialog(null, "No se pueden ingresar más vehículos al parqueadero");
+                    } else {
+                        verificarPlaca = JOptionPane.showInputDialog("Digite la placa del vehículo que desea ingresar");
+                        if (verificarPlaca.equals(placa)) {
+                            ingresar = true;
+                            JOptionPane.showMessageDialog(null, "El vehículo ha sido ingresado al parqueadero");
+                        }
+                        if (verificarPlaca.equals(placa2)) {
+                            ingresar2 = true;
+                            JOptionPane.showMessageDialog(null, "El vehículo ha sido ingresado al parqueadero");
+                        }
+                        if (verificarPlaca.equals(placa3)) {
+                            ingresar3 = true;
+                            JOptionPane.showMessageDialog(null, "El vehículo ha sido ingresado al parqueadero");
+                        }
+                        if (verificarPlaca.equals(placa4)) {
+                            ingresar4 = true;
+                            JOptionPane.showMessageDialog(null, "El vehículo ha sido ingresado al parqueadero");
+                        }
+                        if (verificarPlaca.equals(placa5)) {
+                            ingresar5 = true;
+                            JOptionPane.showMessageDialog(null, "El vehículo ha sido ingresado al parqueadero");
+                        }
+                    }
+                }
+                case 3 -> {
+                    if (ingresar == false & ingresar2 == false & ingresar3 == false & ingresar4 == false & ingresar5 == false) {
+                        JOptionPane.showMessageDialog(null, "No hay vehículos en el parqueadero");
+                    } else {
+                        verificarPlaca = JOptionPane.showInputDialog("Digite la placa del vehículo que desea retirar");
+                        if (verificarPlaca.equals(placa)) {
+                            ingresar = false;
+                            JOptionPane.showMessageDialog(null, "El vehículo ha sido retirado del parqueadero");
+                        }
+                        if (verificarPlaca.equals(placa2)) {
+                            ingresar2 = false;
+                            JOptionPane.showMessageDialog(null, "El vehículo ha sido retirado del parqueadero");
+                        }
+                        if (verificarPlaca.equals(placa3)) {
+                            ingresar3 = false;
+                            JOptionPane.showMessageDialog(null, "El vehículo ha sido retirado del parqueadero");
+                        }
+                        if (verificarPlaca.equals(placa4)) {
+                            ingresar4 = false;
+                            JOptionPane.showMessageDialog(null, "El vehículo ha sido retirado del parqueadero");
+                        }
+                        if (verificarPlaca.equals(placa5)) {
+                            ingresar5 = false;
+                            JOptionPane.showMessageDialog(null, "El vehículo ha sido retirado del parqueadero");
+                        }
+                    }
+                }
+                case 4 -> {
+                    if (placa.equals("") & placa2.equals("") & placa3.equals("") & placa4.equals("") & placa5.equals("")) {
+                        JOptionPane.showMessageDialog(null, "No hay vehículos registrados");
+                    } else {
+                        verificarPlaca = JOptionPane.showInputDialog("Digite la placa del vehículo que desea consultar");
+                        if (verificarPlaca.equals(placa) & ingresar) {
+                            JOptionPane.showMessageDialog(null, "Este vehículo si se encuentra en el parqueadero\nPlaca: " + placa + "\nMarca: " + marca + "\nNombre del cliente: " + nombre + "\nTeléfono: " + telefono);
+                        } else if (verificarPlaca.equals(placa2) & ingresar2) {
+                            JOptionPane.showMessageDialog(null, "Este vehículo si se encuentra en el parqueadero\nPlaca: " + placa2 + "\nMarca: " + marca2 + "\nNombre del cliente: " + nombre2 + "\nTeléfono: " + telefono2);
+                        } else if (verificarPlaca.equals(placa3) & ingresar3) {
+                            JOptionPane.showMessageDialog(null, "Este vehículo si se encuentra en el parqueadero\nPlaca: " + placa3 + "\nMarca: " + marca3 + "\nNombre del cliente: " + nombre3 + "\nTeléfono: " + telefono3);
+                        } else if (verificarPlaca.equals(placa4) & ingresar4) {
+                            JOptionPane.showMessageDialog(null, "Este vehículo si se encuentra en el parqueadero\nPlaca: " + placa4 + "\nMarca: " + marca4 + "\nNombre del cliente: " + nombre4 + "\nTeléfono: " + telefono4);
+                        } else if (verificarPlaca.equals(placa5) & ingresar5) {
+                            JOptionPane.showMessageDialog(null, "Este vehículo si se encuentra en el parqueadero\nPlaca: " + placa5 + "\nMarca: " + marca5 + "\nNombre del cliente: " + nombre5 + "\nTeléfono: " + telefono5);
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Este vehículo no se encuentra en el parqueadero");
+                        }
+                    }
+                }
+                default -> JOptionPane.showMessageDialog(null, "Esa opción no existe");
+            }
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("Parqueadero El Guardián\n1. Registrar Vehículo\n2. Ingresar al parqueadero\n3. Retirar del parqueadero\n4. Consultar si el vehículo se encuentra en el parqueadero\n5. Salir de la aplicación"));
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                8. La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a sus clientes
+                en los cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar con el
+                trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir registrar su ingreso
+                al curso, consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si
+                fueron aprobados o no). Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga
+                presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su totalidad.<br><br>
+                <button class="button" id="button8" type="button" onclick="mostrarCodigoOcho();">Mostrar código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo8">
+package pseint.taller.tres;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Ocho {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        String usuario, usuario2, usuario3, usuario4, usuario5, usuario6, usuario7, usuario8;
+        String resultado, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8;
+        String verificarUsuario;
+        int opcion, contador;
+
+        usuario = "";
+        usuario2 = "";
+        usuario3 = "";
+        usuario4 = "";
+        usuario5 = "";
+        usuario6 = "";
+        usuario7 = "";
+        usuario8 = "";
+        resultado = "";
+        resultado2 = "";
+        resultado3 = "";
+        resultado4 = "";
+        resultado5 = "";
+        resultado6 = "";
+        resultado7 = "";
+        resultado8 = "";
+        contador = 0;
+
+        opcion = Integer.parseInt(JOptionPane.showInputDialog("Escuela Automovilística El Maestro\n1. Registrar cliente\n2. Consultar usuario\n3. Resultado de la prueba del curso\n4. Salir"));
+
+        while (opcion != 4) {
+
+            switch (opcion) {
+
+                case 1 -> {
+                    if (contador < 8) {
+                        verificarUsuario = JOptionPane.showInputDialog("Escriba el número de documento del cliente");
+                        if (verificarUsuario.equals(usuario) == false & verificarUsuario.equals(usuario2) == false & verificarUsuario.equals(usuario3) == false & verificarUsuario.equals(usuario4) == false & verificarUsuario.equals(usuario5) == false & verificarUsuario.equals(usuario6) == false & verificarUsuario.equals(usuario7) == false & verificarUsuario.equals(usuario8) == false & contador == 0) {
+                            usuario = verificarUsuario;
+                            resultado = JOptionPane.showInputDialog("Digite el resultado que obtuvo el cliente en la prueba automovilística\nDigite aprobado o reprobado");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                        } else if (verificarUsuario.equals(usuario) == false & verificarUsuario.equals(usuario2) == false & verificarUsuario.equals(usuario3) == false & verificarUsuario.equals(usuario4) == false & verificarUsuario.equals(usuario5) == false & verificarUsuario.equals(usuario6) == false & verificarUsuario.equals(usuario7) == false & verificarUsuario.equals(usuario8) == false & contador == 1) {
+                            usuario2 = verificarUsuario;
+                            resultado2 = JOptionPane.showInputDialog("Digite el resultado que obtuvo el cliente en la prueba automovilística\nDigite aprobado o reprobado");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                        } else if (verificarUsuario.equals(usuario) == false & verificarUsuario.equals(usuario2) == false & verificarUsuario.equals(usuario3) == false & verificarUsuario.equals(usuario4) == false & verificarUsuario.equals(usuario5) == false & verificarUsuario.equals(usuario6) == false & verificarUsuario.equals(usuario7) == false & verificarUsuario.equals(usuario8) == false & contador == 2) {
+                            usuario3 = verificarUsuario;
+                            resultado3 = JOptionPane.showInputDialog("Digite el resultado que obtuvo el cliente en la prueba automovilística\nDigite aprobado o reprobado");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                        } else if (verificarUsuario.equals(usuario) == false & verificarUsuario.equals(usuario2) == false & verificarUsuario.equals(usuario3) == false & verificarUsuario.equals(usuario4) == false & verificarUsuario.equals(usuario5) == false & verificarUsuario.equals(usuario6) == false & verificarUsuario.equals(usuario7) == false & verificarUsuario.equals(usuario8) == false & contador == 3) {
+                            usuario4 = verificarUsuario;
+                            resultado4 = JOptionPane.showInputDialog("Digite el resultado que obtuvo el cliente en la prueba automovilística\nDigite aprobado o reprobado");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                        } else if (verificarUsuario.equals(usuario) == false & verificarUsuario.equals(usuario2) == false & verificarUsuario.equals(usuario3) == false & verificarUsuario.equals(usuario4) == false & verificarUsuario.equals(usuario5) == false & verificarUsuario.equals(usuario6) == false & verificarUsuario.equals(usuario7) == false & verificarUsuario.equals(usuario8) == false & contador == 4) {
+                            usuario5 = verificarUsuario;
+                            resultado5 = JOptionPane.showInputDialog("Digite el resultado que obtuvo el cliente en la prueba automovilística\nDigite aprobado o reprobado");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                        } else if (verificarUsuario.equals(usuario) == false & verificarUsuario.equals(usuario2) == false & verificarUsuario.equals(usuario3) == false & verificarUsuario.equals(usuario4) == false & verificarUsuario.equals(usuario5) == false & verificarUsuario.equals(usuario6) == false & verificarUsuario.equals(usuario7) == false & verificarUsuario.equals(usuario8) == false & contador == 5) {
+                            usuario6 = verificarUsuario;
+                            resultado6 = JOptionPane.showInputDialog("Digite el resultado que obtuvo el cliente en la prueba automovilística\nDigite aprobado o reprobado");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                        } else if (verificarUsuario.equals(usuario) == false & verificarUsuario.equals(usuario2) == false & verificarUsuario.equals(usuario3) == false & verificarUsuario.equals(usuario4) == false & verificarUsuario.equals(usuario5) == false & verificarUsuario.equals(usuario6) == false & verificarUsuario.equals(usuario7) == false & verificarUsuario.equals(usuario8) == false & contador == 6) {
+                            usuario7 = verificarUsuario;
+                            resultado7 = JOptionPane.showInputDialog("Digite el resultado que obtuvo el cliente en la prueba automovilística\nDigite aprobado o reprobado");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                        } else if (verificarUsuario.equals(usuario) == false & verificarUsuario.equals(usuario2) == false & verificarUsuario.equals(usuario3) == false & verificarUsuario.equals(usuario4) == false & verificarUsuario.equals(usuario5) == false & verificarUsuario.equals(usuario6) == false & verificarUsuario.equals(usuario7) == false & verificarUsuario.equals(usuario8) == false & contador == 7) {
+                            usuario8 = verificarUsuario;
+                            resultado8 = JOptionPane.showInputDialog("Digite el resultado que obtuvo el cliente en la prueba automovilística\nDigite aprobado o reprobado");
+                            contador += 1;
+                            JOptionPane.showMessageDialog(null, "Registro Exitoso");
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Ese usuario ya se encuentra registrado");
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(null, "No se pueden registrar más clientes");
+                    }
+                }
+                case 2 -> {
+                    verificarUsuario = JOptionPane.showInputDialog("Digite el número de documento del cliente para saber si se presentó al curso");
+                    if (verificarUsuario.equals(usuario)) {
+                        JOptionPane.showMessageDialog(null, "Este cliente si se presentó al curso\nDocumento: " + usuario);
+                    } else if (verificarUsuario.equals(usuario2)) {
+                        JOptionPane.showMessageDialog(null, "Este cliente si se presentó al curso\nDocumento: " + usuario2);
+                    } else if (verificarUsuario.equals(usuario3)) {
+                        JOptionPane.showMessageDialog(null, "Este cliente si se presentó al curso\nDocumento: " + usuario3);
+                    } else if (verificarUsuario.equals(usuario4)) {
+                        JOptionPane.showMessageDialog(null, "Este cliente si se presentó al curso\nDocumento: " + usuario4);
+                    } else if (verificarUsuario.equals(usuario5)) {
+                        JOptionPane.showMessageDialog(null, "Este cliente si se presentó al curso\nDocumento: " + usuario5);
+                    } else if (verificarUsuario.equals(usuario6)) {
+                        JOptionPane.showMessageDialog(null, "Este cliente si se presentó al curso\nDocumento: " + usuario6);
+                    } else if (verificarUsuario.equals(usuario7)) {
+                        JOptionPane.showMessageDialog(null, "Este cliente si se presentó al curso\nDocumento: " + usuario7);
+                    } else if (verificarUsuario.equals(usuario8)) {
+                        JOptionPane.showMessageDialog(null, "Este cliente si se presentó al curso\nDocumento: " + usuario8);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Este cliente no se presentó al curso");
+                    }
+                }
+                case 3 -> {
+                    verificarUsuario = JOptionPane.showInputDialog("Digite el número de documento del cliente para consultar el resultado de su prueba");
+                    if (verificarUsuario.equals(usuario)) {
+                        JOptionPane.showMessageDialog(null, "El resultado de la prueba es: " + resultado);
+                    } else if (verificarUsuario.equals(usuario2)) {
+                        JOptionPane.showMessageDialog(null, "El resultado de la prueba es: " + resultado2);
+                    } else if (verificarUsuario.equals(usuario3)) {
+                        JOptionPane.showMessageDialog(null, "El resultado de la prueba es: " + resultado3);
+                    } else if (verificarUsuario.equals(usuario4)) {
+                        JOptionPane.showMessageDialog(null, "El resultado de la prueba es: " + resultado4);
+                    } else if (verificarUsuario.equals(usuario5)) {
+                        JOptionPane.showMessageDialog(null, "El resultado de la prueba es: " + resultado5);
+                    } else if (verificarUsuario.equals(usuario6)) {
+                        JOptionPane.showMessageDialog(null, "El resultado de la prueba es: " + resultado6);
+                    } else if (verificarUsuario.equals(usuario7)) {
+                        JOptionPane.showMessageDialog(null, "El resultado de la prueba es: " + resultado7);
+                    } else if (verificarUsuario.equals(usuario8)) {
+                        JOptionPane.showMessageDialog(null, "El resultado de la prueba es: " + resultado8);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Este usuario no se encuentra registrado");
+                    }
+                }
+                default -> JOptionPane.showMessageDialog(null, "Esa opción no existe");
+            }
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("Escuela Automovilística El Maestro\n1. Registrar cliente\n2. Consultar usuario\n3. Resultado de la prueba del curso\n4. Salir"));
+        }
+    }
+}
+</pre><br>
+            </p>
+        </section>
+
+        <section class="seccion about" id="about">
+            <h2 class="h2">Sobre mi</h2>
+            <p class="p">Administrador de redes de cómputo y sistemas teleinformáticos, mantenimiento de computadores,
+                desarrollador de aplicaciones de escritorio, web y móviles.</p>
+
+            <ul class="rrss">
+                <li class="li">
+                    <a href="https://github.com/beepsecret" class="a" title="Nombre" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="https://www.linkedin.com/in/juancars/" class="a" title="Nombre" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <span class="span">Hecho por Juan Carlos Osorio Crespo</span>
+    </footer>
+
+</body>
+</html>

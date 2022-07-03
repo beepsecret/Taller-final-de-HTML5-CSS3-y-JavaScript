@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS3/EstiloPortafolio.css">
+    <script type="text/javascript" src="JavaScript/portafolio.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <title>Taller 2 de Java</title>
+</head>
+
+<body>
+
+    <div class="circulos">
+        <svg class="circulo circulo1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M41.7,-14.8C48.3,6.5,43.7,30.2,25.2,46.4C6.7,62.7,-25.8,71.5,-44,58.7C-62.1,46,-65.9,11.7,-56.2,-14C-46.5,-39.7,-23.2,-56.7,-2.8,-55.8C17.6,-54.9,35.2,-36,41.7,-14.8Z"
+                transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M33.5,-35.3C42.4,-24.6,48,-12.3,51.9,3.9C55.8,20.2,58.2,40.3,49.2,55.8C40.3,71.2,20.2,82,2.3,79.6C-15.5,77.3,-31,61.9,-42.8,46.4C-54.6,31,-62.8,15.5,-64.1,-1.3C-65.5,-18.1,-59.9,-36.2,-48.1,-46.9C-36.2,-57.7,-18.1,-61,-2.9,-58.1C12.3,-55.2,24.6,-46.1,33.5,-35.3Z"
+                transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M36.5,-28.5C51.9,-21,72.2,-10.5,75.1,2.9C77.9,16.2,63.3,32.5,47.9,45.5C32.5,58.6,16.2,68.4,-3.5,72C-23.3,75.5,-46.6,72.7,-60.3,59.7C-74,46.6,-78.1,23.3,-76.4,1.7C-74.7,-20,-67.3,-39.9,-53.6,-47.4C-39.9,-54.9,-20,-49.9,-4.7,-45.2C10.5,-40.5,21,-36,36.5,-28.5Z"
+                transform="translate(100 100)" />
+        </svg>
+        <svg class="circulo circulo4" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="path"
+                d="M51.6,-50.1C60.9,-42.4,58.2,-21.2,53.8,-4.4C49.3,12.3,43.1,24.6,33.9,36.5C24.6,48.4,12.3,59.8,-2.5,62.3C-17.3,64.8,-34.6,58.4,-46,46.5C-57.4,34.6,-63,17.3,-58.8,4.1C-54.7,-9.1,-40.9,-18.1,-29.5,-25.9C-18.1,-33.6,-9.1,-40.1,6.1,-46.1C21.2,-52.2,42.4,-57.9,51.6,-50.1Z"
+                transform="translate(100 100)" />
+        </svg>
+    </div>
+
+    <header class="header">
+        <h1 class="h1"><a href="#inicio" title="Juan Osorio" class="a">Juan Osorio</a></h1>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="Portafolio.html" title="Inicio" class="a">Inicio</a></li>
+                <li class="li"><a href="Talleres de Java.html" title="Talleres de Java" class="a">Talleres de Java</a></li>
+                <li class="li"><a href="Hoja de Vida/Informacion Principal.html" title="Hoja de vida" class="a">Hoja de
+                        Vida</a></li>
+                <li class="li"><a href="#about" title="Sobre mi" class="a">Sobre mi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="seccion about" id="about">
+            <h2 class="h2">Taller #2 de Java</h2>
+            <p class="p">Aquí te presento el taller #2: Condicionales</p>
+            <p class="p">
+                1. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a
+                18 años, deberá mostrar en pantalla: Usted es mayor de edad.<br><br>
+                <button class="button" id="button" type="button" onclick="mostrarCodigo();">Mostrar
+                    código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo1">
+package pseint.taller.dos;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Uno {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite su edad");
+        int edad = sc.nextInt();
+        if (edad > 17) {
+            System.out.println("Usted es mayor de edad");
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                2. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años,
+                deberá mostrar en pantalla: Usted aún es un niño(a).<br><br>
+                <button class="button" id="button2" type="button" onclick="mostrarCodigoDos();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo2">
+package pseint.taller.dos;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Dos {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite su edad");
+        int edad = sc.nextInt();
+        if (edad < 18) {
+            System.out.println("Usted aún es un niño(a)");
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                3. Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona
+                es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo] usted es mayor de
+                edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18 años, entonces,
+                deberá imprimirse el siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede
+                entrar a la fiesta, por favor devuélvase a su casa.<br><br>
+                <button class="button" id="button3" type="button" onclick="mostrarCodigoTres();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo3">
+package pseint.taller.dos;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Tres {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite su nombre");
+        String nombre = sc.nextLine();
+        System.out.println("Digite su apellido");
+        String apellido = sc.nextLine();
+        System.out.println("Digite su edad");
+        int edad = sc.nextInt();
+        if (edad < 18) {
+            System.out.println(nombre + " " + apellido + " usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa");
+        } else {
+            System.out.println(nombre + " " + apellido + " usted es mayor de edad, por lo tanto puede entrar a la fiesta");
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                4. La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el
+                Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren
+                sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar películas
+                disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si
+                se llegan a presentar daños u otra novedad sobre la película.<br><br>
+                <button class="button" id="button4" type="button" onclick="mostrarCodigoCuatro();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo4">
+package pseint.taller.dos;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Cuatro {
+
+    String nombrePelicula, pelicula, peliculaDos, observacion, observacionDos;
+    boolean disponibilidadP1, disponibilidadP2;
+    int opcion;
+
+    public void agregarDatos() {
+        pelicula = "Avatar";
+        peliculaDos = "Terminator";
+        disponibilidadP1 = true;
+        disponibilidadP2 = false;
+    }
+
+    public void mostrar() {
+        opcion = Integer.parseInt(JOptionPane.showInputDialog("Elija una opción:\n1: Alquilar Película\n2: Consultar Película\n3: Recibir Película"));
+
+        switch (opcion) {
+            case 1 -> {
+                nombrePelicula = JOptionPane.showInputDialog("Escribe el nombre de la película que deseas alquilar");
+
+                if (nombrePelicula.equalsIgnoreCase(pelicula) & disponibilidadP1) {
+                    disponibilidadP1 = false;
+                    JOptionPane.showMessageDialog(null, "Selección exitosa");
+                } else if (nombrePelicula.equalsIgnoreCase(peliculaDos) & disponibilidadP2) {
+                    disponibilidadP2 = false;
+                    JOptionPane.showMessageDialog(null, "Selección exitosa");
+                } else if (nombrePelicula.equalsIgnoreCase(pelicula) & disponibilidadP1 == false) {
+                    JOptionPane.showMessageDialog(null, "Esa película no se encuentra disponible");
+                } else if (nombrePelicula.equalsIgnoreCase(peliculaDos) & disponibilidadP2 == false) {
+                    JOptionPane.showMessageDialog(null, "Esa película no se encuentra disponible");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Esa película no hace parte de nuestra tienda");
+                }
+            }
+            case 2 -> {
+                String mensaje = "Película(s) disponoble(s):";
+                if (disponibilidadP1) {
+                    mensaje += "\n" + pelicula;
+                }
+                if (disponibilidadP2) {
+                    mensaje += "\n" + peliculaDos;
+                }
+                if (mensaje.equals("Película(s) disponoble(s):")) {
+                    mensaje = "No hay películas disponibles";
+                }
+                JOptionPane.showMessageDialog(null, mensaje);
+            }
+            case 3 -> {
+                nombrePelicula = JOptionPane.showInputDialog("Escribe el nombre de la película que vas a recibir");
+                if (disponibilidadP1 & disponibilidadP2) {
+                    JOptionPane.showMessageDialog(null, "Esa película ya se encuentra en nuestra tienda");
+                } else if (nombrePelicula.equalsIgnoreCase(pelicula)) {
+                    disponibilidadP1 = true;
+                    observacion = JOptionPane.showInputDialog("Observaciones");
+                } else if (nombrePelicula.equalsIgnoreCase(peliculaDos)) {
+                    disponibilidadP2 = true;
+                    observacionDos = JOptionPane.showInputDialog("Observaciones");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Esa película no hace parte de nuestra tienda");
+                }
+            }
+            default -> JOptionPane.showMessageDialog(null, "La opción elegida no existe");
+        }
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        Cuatro c = new Cuatro();
+        c.agregarDatos();
+        c.mostrar();
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                5. La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para
+                poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas
+                características que deben indicársele al cliente para que pueda escoger el producto a comprar. Para cada
+                cliente, se tienen las opciones de compra de producto, consulta de precios por producto y devoluciones
+                en caso de que se presenten.<br><br>
+                <button class="button" id="button5" type="button" onclick="mostrarCodigoCinco();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo5">
+package pseint.taller.dos;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Cinco {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        String mensaje, producto, productoDos;
+        float precioParacetamol, PrecioIbuprofeno;
+        int opcion, cantidad, cantidadParacetamol, cantidadIbuprofeno;
+
+        producto = "paracetamol";
+        productoDos = "ibuprofeno";
+        precioParacetamol = 2000;
+        PrecioIbuprofeno = 3000;
+        cantidadParacetamol = 10;
+        cantidadIbuprofeno = 15;
+
+        opcion = Integer.parseInt(JOptionPane.showInputDialog("Droguería Mi Salud\n\nElija una opción:\n1. Comprar Producto\n2. Consultar producto\n3. Devolver producto"));
+
+        switch (opcion) {
+            case 1 -> {
+                mensaje = JOptionPane.showInputDialog("Digite el nombre del producto que quiere comprar\n1. Paracetamol, Cantidad: " + cantidadParacetamol + "\n2. Ibuprofeno, Cantidad: " + cantidadIbuprofeno);
+                if (mensaje.equalsIgnoreCase(producto) == false & mensaje.equalsIgnoreCase(productoDos) == false) {
+                    JOptionPane.showMessageDialog(null, "Ese producto no se encuentra disponible en nuestra droguería");
+                } else {
+                    cantidad = Integer.parseInt(JOptionPane.showInputDialog("Digite la cantidad que quiere comprar"));
+                    if (mensaje.equalsIgnoreCase(producto)) {
+                        if (cantidad > 0 & cantidad <= cantidadParacetamol) {
+                            cantidadParacetamol -= cantidad;
+                            JOptionPane.showMessageDialog(null, "Su compra ha sido exitosa\nLas unidades restantes de este producto son: " + cantidadParacetamol);
+                        } else {
+                            JOptionPane.showMessageDialog(null, "La cantidad no puede ser inferior a 1 ni superior a " + cantidadParacetamol);
+                        }
+                    }
+                    if (mensaje.equalsIgnoreCase(productoDos)) {
+                        if (cantidad > 0 & cantidad <= cantidadParacetamol) {
+                            cantidadIbuprofeno -= cantidad;
+                            JOptionPane.showMessageDialog(null, "Su compra ha sido exitosa\nLas unidades restantes de este producto son: " + cantidadIbuprofeno);
+                        } else {
+                            JOptionPane.showMessageDialog(null, "La cantidad no puede ser inferior a 1 ni superior a " + cantidadIbuprofeno);
+                        }
+                    }
+                }
+            }
+            case 2 -> {
+                mensaje = JOptionPane.showInputDialog("Digite el nombre producto del cual quiere consultar su precio:\nParacetamol\nIbuprofeno");
+                if (mensaje.equalsIgnoreCase(producto)) {
+                    JOptionPane.showMessageDialog(null, "El precio del " + producto + " es de: $" + precioParacetamol);
+                } else if (mensaje.equalsIgnoreCase(productoDos)) {
+                    JOptionPane.showMessageDialog(null, "El precio del " + productoDos + " es de: $" + PrecioIbuprofeno);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Ese producto no se encuentra disponible en nuestra droguería");
+                }
+            }
+            case 3 -> {
+                mensaje = JOptionPane.showInputDialog("Digite el producto que quiere devolver:\nParacetamol\nIbuprofeno");
+                if (mensaje.equalsIgnoreCase(producto)) {
+                    cantidad = Integer.parseInt(JOptionPane.showInputDialog("Digite la cantidad que quiere devolver"));
+                    cantidadParacetamol += cantidad;
+                    JOptionPane.showMessageDialog(null, "Devolución exitosa\nUnidaes disponibles de " + producto + ": " + cantidadParacetamol);
+                } else if (mensaje.equalsIgnoreCase(productoDos)) {
+                    cantidad = Integer.parseInt(JOptionPane.showInputDialog("Digite la cantidad que quiere devolver"));
+                    cantidadIbuprofeno += cantidad;
+                    JOptionPane.showMessageDialog(null, "Devolución exitosa\nUnidaes disponibles de " + productoDos + ": " + cantidadIbuprofeno);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Ese producto no se encuentra disponible en nuestra droguería");
+                }
+            }
+            default -> JOptionPane.showMessageDialog(null, "La opción elegida no existe");
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                6. El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las
+                respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados a sus
+                clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por
+                parte del cliente. También debe existir registro de salida del taller con las novedades y otra de
+                arreglos hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la
+                motocicleta al entregarla.<br><br>
+                <button class="button" id="button6" type="button" onclick="mostrarCodigoSeis();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo6">
+package pseint.taller.dos;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Seis {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        String placa, placaEjemplo, registro, observacion, registroArreglos;
+        int opcion;
+
+        placaEjemplo = "AAA-123";
+
+        opcion = Integer.parseInt(JOptionPane.showInputDialog("Taller de motos El Maquinista\nElija una opción:\n1. Registro de ingreso de la motocicleta\n2. Registro de salida de la motocicleta"));
+        switch (opcion) {
+            case 1 -> {
+                placa = JOptionPane.showInputDialog("Digite la placa de la moto:");
+                if (placa.equals("") == false) {
+                    if (placa.equalsIgnoreCase(placaEjemplo) == false) {
+                        registro = JOptionPane.showInputDialog("Digite la fecha de ingreso de la moto al taller\nEn este formato: dia/mes/año");
+                        if (registro.equals("") == false) {
+                            observacion = JOptionPane.showInputDialog("Digite las observaciones que tenga el cliente");
+                            JOptionPane.showMessageDialog(null, "Placa: " + placa + "\nFecha de ingreso: " + registro + "\nObservación: " + observacion + "\n\nRegistro de ingreso exitoso");
+                        } else {
+                            JOptionPane.showMessageDialog(null, "El dato no puede ser vacío");
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Esa placa ya se encuentra registrada");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "El dato no puede ser vacío");
+                }
+            }
+            case 2 -> {
+                placa = JOptionPane.showInputDialog("Digite la placa de la moto:");
+                if (placaEjemplo.equalsIgnoreCase(placa)) {
+                    registro = JOptionPane.showInputDialog("Digite la fecha de salida de la moto del taller\nEn este formato: dia/mes/año");
+                    if (registro.equals("") == false) {
+                        registroArreglos = JOptionPane.showInputDialog("Digite los arreglos realizados en la moto por parte del mecánico");
+                        JOptionPane.showMessageDialog(null, "Placa: " + placa + "\nFecha de ingreso: " + registro + "\nArreglo(s) realizado(s): " + registroArreglos + "\n\nRegistro de ingreso exitoso");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "El dato no puede ser vacío");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "No hay registro de esa placa");
+                }
+            }
+            default -> JOptionPane.showMessageDialog(null, "La opción elegida no existe");
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                7. La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de
+                masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada
+                adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango
+                se encuentra (bajo peso, normal, sobrepeso y obeso).<br><br>
+                <button class="button" id="button7" type="button" onclick="mostrarCodigoSiete();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo7">
+package pseint.taller.dos;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Siete {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        double peso, estatura, imc;
+        peso = Integer.parseInt(JOptionPane.showInputDialog("Secretaría de Salud Municipal\nPara calcular el índice de masa corporal (IMC), digite los siguientes datos:\nDigite su peso:"));
+        if (peso >= 38.4 & peso <= 600) {
+            estatura = Float.parseFloat(JOptionPane.showInputDialog("Digite su estatura:"));
+            if (estatura >= 1.44 & estatura <= 2.72) {
+                imc = peso / Math.pow(estatura, 2);
+                if (imc < 18.5) {
+                    JOptionPane.showMessageDialog(null, "Su IMC es " + imc + " lo que indica que su peso está en la categoría:\nBajo peso");
+                }
+                if (imc >= 18.5 & imc <= 24.9) {
+                    JOptionPane.showMessageDialog(null, "Su IMC es " + imc + " lo que indica que su peso está en la categoría:\nNormal");
+                }
+                if (imc >= 25 & imc <= 29.9) {
+                    JOptionPane.showMessageDialog(null, "Su IMC es " + imc + " lo que indica que su peso está en la categoría:\nSobrepeso");
+                }
+                if (imc >= 30) {
+                    JOptionPane.showMessageDialog(null, "Su IMC es " + imc + " lo que indica que su peso está en la categoría:\nObesidad");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Su estatura no puede ser inferior a 1.44 m ni superior a 2.72 m");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Su peso no puede ser inferior a 38.4 kg ni superior a 600 kg");
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                8. El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita
+                registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas
+                características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación
+                permita registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente.<br><br>
+                <button class="button" id="button8" type="button" onclick="mostrarCodigoOcho();">Mostrar
+                    código</button><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo8">
+Proceso octavoEjercicio
+	
+	Definir torta, torta2, torta3, cliente, pedido, clienteEjemplo, pedidoEjemplo Como Caracter;
+	Definir opcion Como Entero;
+	
+	pedido <- "";
+	clienteEjemplo <- "Juan Osorio";
+	pedidoEjemplo <- "Torta de Chocolate";
+	torta <- "Torta de Chocolate";
+	torta2 <- "Torta de 3 Leches";
+	torta3 <- "Torta de Vainilla";
+	
+	Escribir "Pastelería";
+	Escribir "";
+	Escribir "Digite el número de la opción que desea realizar";
+	Escribir "1. Registrar Pedido";
+	Escribir "2. Mostrar tortas disponibles";
+	Escribir "3. Mostrar ventas del día";
+	Leer opcion;
+	
+	Segun opcion Hacer
+		
+		1: Escribir "Digite el nombre del cliente";
+			Leer cliente;
+			Si cliente <> "" Entonces
+				Limpiar Pantalla;
+				Escribir "Digite el tipo de torta que quiere comprar";
+				Escribir "Lista de tortas disponibles:";
+				Escribir "";
+				Escribir torta;
+				Escribir "";
+				Escribir torta2;
+				Escribir "";
+				Escribir torta3;
+				Leer pedido;
+				Si pedido <> "" Entonces
+					Si pedido = torta Entonces
+						Escribir "Registro exitoso";
+					SiNo
+						Si pedido = torta2 Entonces
+							Escribir "Registro exitoso";
+						SiNo
+							Si pedido = torta3 Entonces
+								Escribir "Registro exitoso";
+							SiNo
+								Escribir "Esa torta no se encuentra disponible";
+							FinSi
+						FinSi
+					FinSi					
+				SiNo
+					Escribir "El dato no puede ser vacío";
+				FinSi
+			SiNo
+				Escribir "El dato no puede ser vacío";
+			FinSi
+			
+		2:  Limpiar Pantalla;
+			Escribir "Lista de tortas disponibles:";
+			Escribir "";
+			Escribir torta;
+			Escribir "Sabor: Chocolate";
+			Escribir "Decoración: Crema de chocolate y M&Ms cubriendo la superficie";
+			Escribir "";
+			Escribir torta2;
+			Escribir "Sabor: Dulce de Leche";
+			Escribir "Decoración: Crema Chantilly con cerezas";
+			Escribir "";
+			Escribir torta3;
+			Escribir "Sabor: Vainilla";
+			Escribir "Decoración: Crema chantilly, merengues y duraznos";
+			
+		3: Si clienteEjemplo <> "" Entonces
+				Si pedidoEjemplo <> "" Entonces
+					Escribir "Ventas del día:";
+					Escribir clienteEjemplo;
+					Escribir pedidoEjemplo;
+				SiNo
+					Escribir "No hubo ninguna venta el día de hoy";
+				FinSi
+			FinSi
+			
+		De Otro Modo:
+			Escribir "La opción elegida no existe";
+			
+	FinSegun
+	
+FinProceso
+</pre><br>
+            </p>
+            <p class="p">
+                9. El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de
+                diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio
+                solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si
+                desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios
+                para realizar cada cálculo y mostrar su respectivo resultado.<br><br>
+                <button class="button" id="button9" type="button" onclick="mostrarCodigoNueve();">Mostrar
+                    código</button>
+            <pre class="prettyprint lang-pseudocode" id="codigo9">
+package pseint.taller.dos;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Nueve {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        float x, y, z, resultado;
+
+        int opcion = Integer.parseInt(JOptionPane.showInputDialog("Escoja le figura geómetrica de la que desea calcular el área\n1. Rectángulo\n2. Triángulo\n3. Trapecio"));
+
+        switch (opcion) {
+            case 1 -> {
+                x = Float.parseFloat(JOptionPane.showInputDialog("Digite el valor del largo del rectángulo"));
+                y = Float.parseFloat(JOptionPane.showInputDialog("Digite el valor del ancho del rectángulo"));
+                resultado = x * y;
+                JOptionPane.showMessageDialog(null, "El valor del área del rectángulo es de: " + resultado);
+            }
+            case 2 -> {
+                x = Float.parseFloat(JOptionPane.showInputDialog("Digite el valor de la base del triángulo"));
+                y = Float.parseFloat(JOptionPane.showInputDialog("Digite el valor de la altura del triángulo"));
+                resultado = x * y / 2;
+                JOptionPane.showMessageDialog(null, "El valor del área del triángulo es de: " + resultado);
+            }
+            case 3 -> {
+                x = Float.parseFloat(JOptionPane.showInputDialog("Digite el valor de la base mayor del trapecio"));
+                y = Float.parseFloat(JOptionPane.showInputDialog("Digite el valor de la base menor del trapecio"));
+                z = Float.parseFloat(JOptionPane.showInputDialog("Digite el valor de la altura del trapecio"));
+                resultado = ((x + y) * z) / 2;
+                JOptionPane.showMessageDialog(null, "El valor del área del trapecio es de: " + resultado);
+            }
+            default -> JOptionPane.showMessageDialog(null, "La opción elegida no existe");
+        }
+    }
+}
+</pre><br>
+            </p>
+            <p class="p">
+                10. El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una
+                aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los
+                atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o
+                consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor
+                no puede ser mayor al valor que tiene en la cuenta.<br><br>
+                <button class="button" id="button10" type="button" onclick="mostrarCodigoDiez();">Mostrar
+                    código</button><br><br>
+            <pre class="prettyprint lang-pseudocode" id="codigo10">
+package pseint.taller.dos;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Juan Osorio
+ */
+public class Diez {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        String titular, mensaje;
+        float saldo, dinero;
+        int opcion;
+
+        titular = "Juan Osorio";
+        saldo = 1000;
+
+        mensaje = JOptionPane.showInputDialog("Su Banco Fiel\n\nDigite el nombre del titular");
+        if (mensaje.equalsIgnoreCase(titular)) {
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("Titular de la cuenta: " + titular + "\nNúmero de la cuenta: 7481950263\nTipo de cuenta: Ahorros\n\nElija una opción:\n1. Realizar ingreso\n2. Realizar retiro\n3. Consulta"));
+
+            switch (opcion) {
+                case 1 -> {
+                    dinero = Float.parseFloat(JOptionPane.showInputDialog("Digite la cantidad de dinero que desea ingresar"));
+                    if (dinero > 0) {
+                        saldo = saldo + dinero;
+                        JOptionPane.showMessageDialog(null, "Su saldo actual quedó en: $" + saldo);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "La cantidad de dinero a ingresar no puede ser 0 o inferior");
+                    }
+                }
+                case 2 -> {
+                    dinero = Float.parseFloat(JOptionPane.showInputDialog("Digite la cantidad de dinero que desea retirar"));
+                    if (dinero <= saldo) {
+                        saldo = saldo - dinero;
+                        JOptionPane.showMessageDialog(null, "Su saldo actual quedó en: $" + saldo);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "La cantidad de dinero a retirar no puede superar la cantidad de dinero disponible");
+                    }
+                }
+                case 3 -> JOptionPane.showMessageDialog(null, "El saldo que tiene actualmente es de: $" + saldo);
+                default -> JOptionPane.showMessageDialog(null, "La opción elegida no existe");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No hay ninguna cuenta asociada a ese nombre");
+        }
+    }
+}
+</pre><br>
+            </p>
+        </section>
+
+        <section class="seccion about" id="about">
+            <h2 class="h2">Sobre mi</h2>
+            <p class="p">Administrador de redes de cómputo y sistemas teleinformáticos, mantenimiento de computadores,
+                desarrollador de aplicaciones de escritorio, web y móviles.</p>
+
+            <ul class="rrss">
+                <li class="li">
+                    <a href="https://github.com/beepsecret" class="a" title="Nombre" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="https://www.linkedin.com/in/juancars/" class="a" title="Nombre" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <span class="span">Hecho por Juan Carlos Osorio Crespo</span>
+    </footer>
+
+</body>
+
+</html>
