@@ -10,9 +10,12 @@
 </head>
 
 <body id="contenido">
-    <button type="button" onclick="cambiarColorAzul('contenido')">Azul</button>
-    <button type="button" onclick="cambiarColorVerde('contenido')">Verde</button>
-    <button type="button" onclick="cambiarColorMorado('contenido')">Morado</button>
+    <select name="color" id="color" onchange="cambiarColor()">
+        <option value="Seleccione un color">Seleccione un color</option>
+        <option value="Azul">Azul</option>
+        <option value="Verde">Verde</option>
+        <option value="Morado">Morado</option>
+    </select>
     <header>
         <h2>Hoja de Vida de Juan Carlos Osorio Crespo</h2>
     </header>
@@ -23,7 +26,7 @@
             <li class="main-nav__item"><a href="#">Referencias Personales</a></li>
             <li class="main-nav__item"><a href="Referencias Familiares.html">Referencias Familiares</a></li>
             <li class="main-nav__item"><a href="Estudios Realizados.html">Estudios Realizados</a></li>
-            <li class="main-nav__item"><a href="Portafolio.html">Portafolio</a></li>
+            <li class="main-nav__item"><a href="index.html">Portafolio</a></li>
         </ul>
     </nav>
     <main>
